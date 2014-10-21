@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 
 TIMEOUT=3
-COOPR_SERVER_HOME=${COOPR_SERVER_HOME:-/opt/coopr/server}
 COOPR_SERVER_URI=${COOPR_SERVER_URI:-http://localhost:55054}
 COOPR_API_USER=${COOPR_API_USER:-admin}
 COOPR_API_KEY=${COOPR_API_KEY:-1234567890abcdef}
 COOPR_TENANT=${COOPR_TENANT:-superadmin}
-MAINDIR=${COOPR_SERVER_HOME}/config/defaults
+MAINDIR=$(dirname $(cd $(dirname ${BASH_SOURCE[0]}) && pwd))
 
 dirs="clustertemplates hardwaretypes imagetypes providers services"
 
