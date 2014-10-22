@@ -6,13 +6,13 @@ This repository contains the default set of templates used by [Coopr](http://coo
 Templates fall into one of two categories, templates which define hardware, and templates which define software.
 
 ### Hardware
-- hardwaretypes
-- imagetypes
-- providers
+- providers - set of credentials and variables used to connect to provider APIs
+- hardwaretypes - abstraction of hardware to provider-specific instance types
+- imagetypes - abstraction of image to provider-specific images
 
 ### Software
-- clustertemplates
-- services
+- services - defines how to operate (install, configure, start, stop, etc) a piece of software
+- clustertemplates - collection of software, rules, and configuration to define a cluster
 
 ## Contributing to Coopr Templates
 
