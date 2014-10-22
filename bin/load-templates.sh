@@ -9,11 +9,6 @@ MAINDIR=$(dirname $(cd $(dirname ${BASH_SOURCE[0]}) && pwd))
 
 dirs="clustertemplates hardwaretypes imagetypes providers services"
 
-if [ "x$COOPR_USE_DUMMY_PROVISIONER" == "xtrue" ]
-then
-  dirs="$dirs plugins/providertypes plugins/automatortypes"
-fi
-
 for d in ${dirs} ; do
   cd ${MAINDIR}
   [[ -d ${d} ]] && cd ${d} || continue
