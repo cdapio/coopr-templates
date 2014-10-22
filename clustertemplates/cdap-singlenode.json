@@ -11,10 +11,10 @@
       "zookeeper-server",
       "hbase-master",
       "hbase-regionserver",
-      "cdap",
       "mysql-server",
       "hive-metastore-database",
-      "hive-metastore"
+      "hive-metastore",
+      "cdap"
     ],
     "provider": "rackspace",
     "hardwaretype": "standard-xlarge",
