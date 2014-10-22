@@ -1,7 +1,7 @@
 # Contributing to Coopr Templates
 
 Are you interested in making Coopr Templates better? Our development model is a simple
-pull-based model with a consensus building phase, similar to the Apache's voting process.
+pull-based model with a consensus building phase, similar to Apache's voting process.
 If you want to help make Coopr Templates better, by adding new features, fixing bugs, or
 even suggesting improvements to something that's already there, here's how you can
 contribute:
