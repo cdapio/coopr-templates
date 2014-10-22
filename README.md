@@ -14,6 +14,22 @@ Templates fall into one of two categories, templates which define hardware, and 
 - services - defines how to operate (install, configure, start, stop, etc) a piece of software
 - clustertemplates - collection of software, rules, and configuration to define a cluster
 
+## Helpers
+- bin/load-templates.sh
+
+This script can be used to upload templates to a Coopr server.
+
+The following variables control the upload.
+
+```bash
+COOPR_SERVER_URI=${COOPR_SERVER_URI:-http://localhost:55054}
+COOPR_API_USER=${COOPR_API_USER:-admin}
+COOPR_API_KEY=${COOPR_API_KEY:-1234567890abcdef}
+COOPR_TENANT=${COOPR_TENANT:-superadmin}
+```
+
+You may modify these on the command line or by exporting them to your environment before running the script.
+
 ## Contributing to Coopr Templates
 
 Are you interested in making Coopr Templates better? Our development model is a simple
