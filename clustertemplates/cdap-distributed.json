@@ -113,7 +113,7 @@
     "hardwaretypes": [
       "standard-large",
       "standard-xlarge",
-      "standard-xxlarge"
+      "standard-2xlarge"
     ],
     "imagetypes": [
       "centos6",
