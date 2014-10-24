@@ -12,10 +12,10 @@
       "image": "ami-b158c981"
     },
     "google": {
-      "image": "centos-6-v20140926"
+      "image": "centos-6-v20141016"
     },
     "joyent": {
-      "image": "bf67d2fc-2ed1-11e4-a6ef-a7df3cdba7e9"
+      "image": "26f85622-497a-11e4-ba93-3fe7b89aea1a"
     },
     "rackspace": {
       "image": "3ab30cc6-c503-41d3-8a37-106fda7848a7"
