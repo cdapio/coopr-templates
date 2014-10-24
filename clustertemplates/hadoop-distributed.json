@@ -22,6 +22,9 @@
           "io.file.buffer.size": "131072",
           "hadoop.tmp.dir": "/data/hadoop"
         },
+        "hadoop_env": {
+          "hadoop_log_dir": "/data/logs/hadoop-hdfs"
+        },
         "hdfs_site": {
           "dfs.datanode.max.transfer.threads": "4096",
           "dfs.replication": "2",
@@ -32,6 +35,9 @@
         "mapred_site": {
           "mapreduce.framework.name": "yarn"
         },
+        "yarn_env": {
+          "yarn_log_dir": "/data/logs/hadoop-yarn"
+        },
         "yarn_site": {
           "yarn.resourcemanager.hostname": "%host.service.hadoop-yarn-resourcemanager%",
           "yarn.resourcemanager.scheduler.address": "%host.service.hadoop-yarn-resourcemanager%:8030",
@@ -41,6 +47,9 @@
         }
       },
       "hbase": {
+        "hbase_env": {
+          "hbase_log_dir": "/data/logs/hbase"
+        },
         "hbase_site": {
           "hbase.rootdir": "hdfs://%host.service.hadoop-hdfs-namenode%/hbase",
           "hbase.cluster.distributed": "true",
@@ -48,6 +57,9 @@
         }
       },
       "hive": {
+        "hive_env": {
+          "hive_log_dir": "/data/logs/hive"
+        },
         "hive_site": {
           "javax.jdo.option.ConnectionURL": "jdbc:mysql://%host.service.mysql-server%:3306/hive",
           "javax.jdo.option.ConnectionDriverName": "com.mysql.jdbc.Driver",
@@ -69,6 +81,11 @@
           }
         },
         "bind_address": "%ip.bind_v4.service.mysql-server%"
+      },
+      "zookeeper": {
+        "zookeeper_env": {
+          "zookeeper_log_dir": "/data/logs/zookeeper"
+        }
       }
     }
   },

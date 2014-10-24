@@ -27,7 +27,8 @@
           "hadoop.tmp.dir": "/data/hadoop"
         },
         "hadoop_env": {
-          "hadoop_heapsize": "256"
+          "hadoop_heapsize": "256",
+          "hadoop_log_dir": "/data/logs/hadoop-hdfs"
         },
         "hdfs_site": {
           "dfs.datanode.max.transfer.threads": "4096",
@@ -53,7 +54,8 @@
         },
         "yarn_env": {
           "yarn_nodemanager_heapsize": "256",
-          "yarn_resourcemanager_heapsize": "256"
+          "yarn_resourcemanager_heapsize": "256",
+          "yarn_log_dir": "/data/logs/hadoop-yarn"
         },
         "yarn_site": {
           "yarn.resourcemanager.hostname": "%host.service.hadoop-yarn-resourcemanager%",
@@ -68,7 +70,7 @@
         "hbase_env": {
           "hbase_master_heap": "-Xmx1024m",
           "hbase_regionserver_heap": "-Xms2048m -Xmx2048m",
-          "hbase_log_dir": "/var/log/hbase",
+          "hbase_log_dir": "/data/logs/hbase"
           "common_gc_opts": "-verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=1 -XX:GCLogFileSize=512M",
           "hbase_jmx_base": "-Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false",
           "hbase_master_opts": "$COMMON_GC_OPTS $HBASE_MASTER_OPTS $HBASE_MASTER_HEAP $HBASE_JMX_BASE -Dcom.sun.management.jmxremote.port=10101",
@@ -82,6 +84,9 @@
         }
       },
       "hive": {
+        "hive_env": {
+          "hive_log_dir": "/data/logs/hive"
+        },
         "hive_site": {
           "javax.jdo.option.ConnectionURL": "jdbc:mysql://localhost:3306/hive?createDatabaseIfNotExist=true",
           "javax.jdo.option.ConnectionDriverName": "com.mysql.jdbc.Driver",
@@ -130,7 +135,8 @@
       },
       "zookeeper": {
         "zookeeper_env": {
-          "server_jvmflags": "-Xmx256m"
+          "server_jvmflags": "-Xmx256m",
+          "zookeeper_log_dir": "/data/logs/zookeeper"
         },
         "zoocfg": {
           "maxClientCnxns": "0",
