@@ -26,7 +26,8 @@
           "hadoop.tmp.dir": "/data/hadoop"
         },
         "hadoop_env": {
-          "hadoop_heapsize": "512"
+          "hadoop_heapsize": "512",
+          "hadoop_log_dir": "/data/logs/hadoop-hdfs"
         },
         "hdfs_site": {
           "dfs.datanode.max.transfer.threads": "4096",
@@ -49,7 +50,8 @@
         },
         "yarn_env": {
           "yarn_nodemanager_heapsize": "512",
-          "yarn_resourcemanager_heapsize": "512"
+          "yarn_resourcemanager_heapsize": "512",
+          "yarn_log_dir": "/data/logs/hadoop-yarn"
         },
         "yarn_site": {
           "yarn.resourcemanager.hostname": "%host.service.hadoop-yarn-resourcemanager%",
@@ -62,7 +64,8 @@
       },
       "hbase": {
         "hbase_env": {
-          "hbase_heapsize": "512"
+          "hbase_heapsize": "512",
+          "hbase_log_dir": "/data/logs/hbase"
         },
         "hbase_site": {
           "hbase.rootdir": "hdfs://%host.service.hadoop-hdfs-namenode%/hbase",
@@ -71,6 +74,9 @@
         }
       },
       "hive": {
+        "hive_env": {
+          "hive_log_dir": "/data/logs/hive"
+        },
         "hive_site": {
           "javax.jdo.option.ConnectionURL": "jdbc:mysql://localhost:3306/hive?createDatabaseIfNotExist=true",
           "javax.jdo.option.ConnectionDriverName": "com.mysql.jdbc.Driver",
@@ -95,6 +101,9 @@
         "bind_address": "127.0.0.1"
       },
       "zookeeper": {
+        "zookeeper_env": {
+          "zookeeper_log_dir": "/data/logs/zookeeper"
+        },
         "zoocfg": {
           "maxClientCnxns": "0",
           "tickTime": "2000",
