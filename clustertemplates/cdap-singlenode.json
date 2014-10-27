@@ -70,7 +70,7 @@
         "hbase_env": {
           "hbase_master_heap": "-Xmx1024m",
           "hbase_regionserver_heap": "-Xms2048m -Xmx2048m",
-          "hbase_log_dir": "/data/logs/hbase"
+          "hbase_log_dir": "/data/logs/hbase",
           "common_gc_opts": "-verbose:gc -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=1 -XX:GCLogFileSize=512M",
           "hbase_jmx_base": "-Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false",
           "hbase_master_opts": "$COMMON_GC_OPTS $HBASE_MASTER_OPTS $HBASE_MASTER_HEAP $HBASE_JMX_BASE -Dcom.sun.management.jmxremote.port=10101",
