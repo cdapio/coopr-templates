@@ -1,0 +1,32 @@
+{
+  "name": "node-modules",
+  "description": "Installs/configures Node.JS NPM modules",
+  "dependencies": {
+    "conflicts": [],
+    "install": {
+      "requires": [ "nodejs" ],
+      "uses": []
+    },
+    "provides": [],
+    "runtime": {
+      "requires": [],
+      "uses": []
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type":"chef-solo",
+        "fields": {
+          "run_list": "recipe[node_modules::default]"
+        }
+      },
+      "configure": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[node_modules::default]"
+        }
+      }
+    }
+  }
+}
