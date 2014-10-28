@@ -18,7 +18,7 @@
       "install": {
         "type":"chef-solo",
         "fields": {
-          "run_list": "recipe[mongodb::replicaset]"
+          "run_list": "recipe[build-essential],recipe[mongodb::replicaset]"
         }
       },
       "configure": {
@@ -30,14 +30,14 @@
       "start": {
         "type": "chef-solo",
         "fields": {
-          "run_list": "recipe[mongodb::default],recipe[coopr_service_manager::default]",
+          "run_list": "recipe[mongodb::replicaset],recipe[coopr_service_manager::default]",
           "json_attributes": "{\"coopr\": { \"node\": { \"services\": { \"mongodb\": \"start\" } } } }" 
         }
       },
       "stop": {
         "type": "chef-solo",
         "fields": {
-          "run_list": "recipe[mongodb::default],recipe[coopr_service_manager::default]",
+          "run_list": "recipe[mongodb::replicaset],recipe[coopr_service_manager::default]",
           "json_attributes": "{\"coopr\": { \"node\": { \"services\": { \"mongodb\": \"stop\" } } } }" 
         }
       }
