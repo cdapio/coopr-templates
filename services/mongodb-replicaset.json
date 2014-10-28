@@ -18,7 +18,8 @@
       "install": {
         "type":"chef-solo",
         "fields": {
-          "run_list": "recipe[build-essential],recipe[mongodb::replicaset]"
+          "run_list": "recipe[build-essential],recipe[mongodb::replicaset]",
+          "json_attributes": "{\"build-essential\": { \"compile_time\": true } }"
         }
       },
       "configure": {
