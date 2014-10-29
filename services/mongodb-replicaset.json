@@ -1,0 +1,47 @@
+{
+  "name": "mongodb-replicaset",
+  "description": "Replicated MongoDB instance",
+  "dependencies": {
+    "conflicts": [],
+    "install": {
+      "requires": [ "base" ],
+      "uses": []
+    },
+    "provides": [ "mongodb" ],
+    "runtime": {
+      "requires": [],
+      "uses": []
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type":"chef-solo",
+        "fields": {
+          "run_list": "recipe[build-essential],recipe[mongodb::replicaset]",
+          "json_attributes": "{\"build-essential\": { \"compile_time\": true } }"
+        }
+      },
+      "configure": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[mongodb::replicaset]"
+        }
+      },
+      "start": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[mongodb::replicaset],recipe[coopr_service_manager::default]",
+          "json_attributes": "{\"coopr\": { \"node\": { \"services\": { \"mongodb\": \"start\" } } } }" 
+        }
+      },
+      "stop": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[mongodb::replicaset],recipe[coopr_service_manager::default]",
+          "json_attributes": "{\"coopr\": { \"node\": { \"services\": { \"mongodb\": \"stop\" } } } }" 
+        }
+      }
+    }
+  }
+}
