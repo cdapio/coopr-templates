@@ -1,0 +1,73 @@
+{
+  "name": "mean",
+  "description": "MEAN stack (MongoDB, Express, Angular, Node.js)",
+  "defaults": {
+    "services": [
+      "base",
+      "nodejs",
+      "node-modules",
+      "mongodb-single"
+    ],
+    "provider": "rackspace",
+    "hardwaretype": "standard-medium",
+    "imagetype": "ubuntu12",
+    "config": {
+      "mongodb": {
+        "config": {
+          "bind_ip": "%ip.bind_v4.service.mongodb-single%",
+          "dbpath": "/data/mongodb",
+          "replSet": "coopr"
+        },
+        "default_init_name": "mongodb",
+        "instance_name": "mongodb",
+        "cluster_name": "coopr"
+      },
+      "nodejs": {
+        "modules": [
+          "express",
+          "angular"
+        ]
+      }
+    }
+  },
+  "compatibility": {
+    "hardwaretypes": [
+      "standard-small",
+      "standard-medium",
+      "standard-large",
+      "standard-xlarge",
+      "standard-2xlarge"
+    ],
+    "imagetypes": [
+      "centos6",
+      "ubuntu12"
+    ],
+    "services": [
+      "base",
+      "nodejs",
+      "node-modules",
+      "mongodb-single"
+    ]
+  },
+  "constraints": {
+    "layout": {
+      "mustcoexist": [
+        [ "nodejs", "node-modules" ]
+      ]
+    },
+    "services": {
+      "mongodb-single": {
+        "quantities": {
+          "max": "1"
+        }
+      }
+    }
+  },
+  "administration": {
+    "leaseduration": {
+      "initial":0,
+      "max":0,
+      "step":0
+    }
+  }
+}
