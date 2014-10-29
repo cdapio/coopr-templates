@@ -1,6 +1,6 @@
 {
-  "name": "mean",
-  "description": "MEAN stack (MongoDB, Express, Angular, Node.js)",
+  "name": "mean-singlenode",
+  "description": "MEAN stack (MongoDB, Express, Angular, Node.js) on a single node",
   "defaults": {
     "services": [
       "base",
@@ -15,12 +15,10 @@
       "mongodb": {
         "config": {
           "bind_ip": "%ip.bind_v4.service.mongodb-single%",
-          "dbpath": "/data/mongodb",
-          "replSet": "coopr"
+          "dbpath": "/data/mongodb"
         },
         "default_init_name": "mongodb",
-        "instance_name": "mongodb",
-        "cluster_name": "coopr"
+        "instance_name": "mongodb"
       },
       "nodejs": {
         "modules": [
@@ -50,17 +48,9 @@
     ]
   },
   "constraints": {
-    "layout": {
-      "mustcoexist": [
-        [ "nodejs", "node-modules" ]
-      ]
-    },
-    "services": {
-      "mongodb-single": {
-        "quantities": {
-          "max": "1"
-        }
-      }
+    "size": {
+      "min": 1,
+      "max": 1
     }
   },
   "administration": {
