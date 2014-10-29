@@ -1,0 +1,55 @@
+{
+  "name": "mongodb-replicaset",
+  "description": "Replicated MongoDB cluster",
+  "defaults": {
+    "services": [
+      "base",
+      "mongodb-replicaset"
+    ],
+    "provider": "rackspace",
+    "hardwaretype": "standard-medium",
+    "imagetype": "ubuntu12",
+    "config": {
+      "mongodb": {
+        "config": {
+          "bind_ip": "%ip.bind_v4.service.mongodb-single%",
+          "dbpath": "/data/mongodb",
+          "replSet": "coopr"
+        },
+        "default_init_name": "mongodb",
+        "instance_name": "mongodb",
+        "cluster_name": "coopr"
+      }
+    }
+  },
+  "compatibility": {
+    "hardwaretypes": [
+      "standard-small",
+      "standard-medium",
+      "standard-large",
+      "standard-xlarge",
+      "standard-2xlarge"
+    ],
+    "imagetypes": [
+      "centos6",
+      "ubuntu12"
+    ],
+    "services": [
+      "base",
+      "mongodb-replicaset"
+    ]
+  },
+  "constraints": {
+    "size": {
+      "min": 1,
+      "max": 5
+    }
+  },
+  "administration": {
+    "leaseduration": {
+      "initial":0,
+      "max":0,
+      "step":0
+    }
+  }
+}
