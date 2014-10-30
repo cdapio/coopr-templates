@@ -15,7 +15,8 @@ Templates fall into one of two categories, templates which define hardware, and 
 - clustertemplates - collection of software, rules, and configuration to define a cluster
 
 ## Helpers
-- bin/load-templates.sh
+
+### bin/load-templates.sh
 
 This script can be used to upload templates to a Coopr server.
 
@@ -29,6 +30,17 @@ COOPR_TENANT=${COOPR_TENANT:-superadmin}
 ```
 
 You may modify these on the command line or by exporting them to your environment before running the script.
+
+### bin/jsonlint.sh
+
+This script uses `bin/json.rb` to verify the validity of JSON. It does not currently test the template's validity as a Coopr template.
+
+There is a Rake task setup for running this script. You will need Ruby and the `bundler` gem installed. You can execute it by doing the following:
+
+```
+bundle install
+bundle exec rake
+```
 
 ## Contributing to Coopr Templates
 
