@@ -23,6 +23,12 @@
       "ram": "7.5",
       "disks": "/dev/xvdb=420,/dev/xvdc=420"
     },
+    "digitalocean": {
+      "flavor": "65",
+      "cost": "0.119",
+      "vcpu": "4",
+      "ram": "8"
+    },
     "google": {
       "flavor": "n1-standard-2",
       "cost": "0.14",

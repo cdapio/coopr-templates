@@ -23,6 +23,12 @@
       "ram": "1.7",
       "disks": "/dev/xvda3=160"
     },
+    "digitalocean": {
+      "flavor": "62",
+      "cost": "0.03",
+      "vcpu": "2",
+      "ram": "2"
+    },
     "google": {
       "flavor": "g1-small",
       "cost": "0.035",
