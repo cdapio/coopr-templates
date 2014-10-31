@@ -14,6 +14,9 @@
       "image": "ami-ad42009d",
       "sshuser": "ubuntu"
     },
+    "digitalocean": {
+      "image": "6374128"
+    },
     "joyent": {
       "image": "01a24b88-f957-4f9d-9946-fbd21b0612bf",
       "sshuser": "ubuntu"
