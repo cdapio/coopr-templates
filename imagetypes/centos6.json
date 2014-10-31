@@ -1,6 +1,6 @@
 {
   "name": "centos6",
-  "description": "CentOS 6",
+  "description": "CentOS 6.5 64-bit",
   "providermap": {
     "aws-us-east-1": {
       "image": "ami-eb6b0182"
