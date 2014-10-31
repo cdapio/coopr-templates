@@ -1,6 +1,6 @@
 {
   "name": "ubuntu12",
-  "description": "Ubuntu 12.04 LTS (Precise Pangolin)",
+  "description": "Ubuntu 12.04 LTS (Precise Pangolin) 64-bit",
   "providermap": {
     "aws-us-east-1": {
       "image": "ami-ecda6c84",
