@@ -11,6 +11,9 @@
     "aws-us-west-2": {
       "image": "ami-b158c981"
     },
+    "digitalocean": {
+      "image": "6372108"
+    },
     "google": {
       "image": "centos-6-v20141016"
     },
