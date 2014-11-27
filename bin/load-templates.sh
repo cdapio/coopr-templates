@@ -6,6 +6,7 @@ COOPR_API_USER=${COOPR_API_USER:-admin}
 COOPR_API_KEY=${COOPR_API_KEY:-1234567890abcdef}
 COOPR_TENANT=${COOPR_TENANT:-superadmin}
 MAINDIR=$(dirname $(cd $(dirname ${BASH_SOURCE[0]}) && pwd))
+COOPR_CERT_PARAMETER=${COOPR_CERT_PARAMETER:-${CERT_PARAMETER}}
 
 dirs="clustertemplates hardwaretypes imagetypes providers services"
 
@@ -19,7 +20,7 @@ for d in ${dirs} ; do
       --header "Coopr-ApiKey:${COOPR_API_KEY}" \
       --header "Coopr-TenantID:${COOPR_TENANT}" \
       --connect-timeout ${TIMEOUT} --data @${f} \
-      ${CERT_PARAMETER} \ 
+      ${COOPR_CERT_PARAMETER} \
       ${COOPR_SERVER_URI}/v2/${d}/${f/.json/}
     ret=$?
     [[ ${ret} -ne 0 ]] && failed="${failed} ${d}/${f}"
