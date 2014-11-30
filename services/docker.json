@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "conflicts": [],
+    "install": {
+      "requires": [],
+      "uses": [ "base" ]
+    },
+    "provides": [],
+    "runtime": {
+      "requires": [],
+      "uses": []
+    }
+  },
+  "description": "Docker daemon",
+  "links": [],
+  "name": "docker",
+  "provisioner": {
+    "actions": {
+      "install": {
+        "fields": {
+          "run_list": "recipe[docker]"
+        },
+        "type": "chef-solo"
+      },
+      "configure": {
+        "fields": {
+          "run_list": "recipe[docker]"
+        },
+        "type": "chef-solo"
+      }
+    }
+  }
+}
