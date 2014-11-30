@@ -1,0 +1,55 @@
+{
+  "administration": {
+    "leaseduration": {
+      "initial": 0,
+      "max": 0,
+      "step": 0
+    }
+  },
+  "compatibility": {
+    "hardwaretypes": [
+      "standard-small",
+      "standard-medium",
+      "standard-large",
+      "standard-xlarge",
+      "standard-2xlarge"
+    ],
+    "imagetypes": [
+      "centos6",
+      "centos7",
+      "ubuntu12"
+    ],
+    "services": [
+      "base",
+      "docker"
+    ]
+  },
+  "constraints": {
+    "layout": {
+      "cantcoexist": [],
+      "mustcoexist": []
+    },
+    "services": {},
+    "size": {
+      "max": 2147483647,
+      "min": 1
+    }
+  },
+  "defaults": {
+    "config": {
+      "coopr_firewall": {
+        "unmanaged": "true"
+      }
+    },
+    "hardwaretype": "standard-medium",
+    "imagetype": "centos6",
+    "provider": "google",
+    "services": [
+      "base",
+      "docker"
+    ]
+  },
+  "description": "Docker base system with Docker daemon",
+  "links": [],
+  "name": "docker-base"
+}
