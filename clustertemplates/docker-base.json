@@ -26,7 +26,12 @@
   "constraints": {
     "layout": {
       "cantcoexist": [],
-      "mustcoexist": []
+      "mustcoexist": [
+        [
+          "base",
+          "docker"
+        ]
+      ]
     },
     "services": {},
     "size": {
