@@ -16,7 +16,6 @@
     ],
     "imagetypes": [
       "centos6",
-      "centos7",
       "ubuntu12"
     ],
     "services": [
