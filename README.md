@@ -27,6 +27,8 @@ COOPR_SERVER_URI=${COOPR_SERVER_URI:-http://localhost:55054}
 COOPR_API_USER=${COOPR_API_USER:-admin}
 COOPR_API_KEY=${COOPR_API_KEY:-1234567890abcdef}
 COOPR_TENANT=${COOPR_TENANT:-superadmin}
+TRUST_CERT_PATH=${TRUST_CERT_PATH}
+TRUST_CERT_PASSWORD=${TRUST_CERT_PASSWORD}
 ```
 
 You may modify these on the command line or by exporting them to your environment before running the script.
