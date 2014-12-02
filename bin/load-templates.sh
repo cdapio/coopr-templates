@@ -6,7 +6,14 @@ COOPR_API_USER=${COOPR_API_USER:-admin}
 COOPR_API_KEY=${COOPR_API_KEY:-1234567890abcdef}
 COOPR_TENANT=${COOPR_TENANT:-superadmin}
 MAINDIR=$(dirname $(cd $(dirname ${BASH_SOURCE[0]}) && pwd))
-COOPR_CERT_PARAMETER=${COOPR_CERT_PARAMETER:-${CERT_PARAMETER}}
+
+if [ -z "$CERT_PARAMETER" ]; then
+  if [ -n "$TRUST_CERT_PATH" ] && [ -n "$TRUST_CERT_PASSWORD" ]; then
+    COOPR_CERT_PARAMETER="--cert ${TRUST_CERT_PATH}:${TRUST_CERT_PASSWORD}"
+  fi
+else
+  COOPR_CERT_PARAMETER="${CERT_PARAMETER}"
+fi
 
 dirs="clustertemplates hardwaretypes imagetypes providers services"
 
