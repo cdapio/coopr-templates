@@ -17,6 +17,10 @@
     "digitalocean": {
       "image": "6374128"
     },
+    "google": {
+      "image": "ubuntu-1204-precise-v20141031",
+      "sshuser": "ubuntu"
+    },
     "joyent": {
       "image": "01a24b88-f957-4f9d-9946-fbd21b0612bf",
       "sshuser": "ubuntu"
