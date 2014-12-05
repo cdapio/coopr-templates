@@ -3,25 +3,22 @@
   "description": "Standard server - Medium 4GB",
   "providermap": {
     "aws-us-east-1": {
-      "flavor": "m1.medium",
-      "cost": "0.087",
+      "flavor": "m3.medium",
+      "cost": "0.070",
       "vcpu": "1",
-      "ram": "3.75",
-      "disks": "/dev/xvdb=410"
+      "ram": "3.75"
     },
     "aws-us-west-1": {
-      "flavor": "m1.medium",
-      "cost": "0.087",
+      "flavor": "m3.medium",
+      "cost": "0.070",
       "vcpu": "1",
-      "ram": "3.75",
-      "disks": "/dev/xvdb=410"
+      "ram": "3.75"
     },
     "aws-us-west-2": {
-      "flavor": "m1.medium",
-      "cost": "0.087",
+      "flavor": "m3.medium",
+      "cost": "0.070",
       "vcpu": "1",
-      "ram": "3.75",
-      "disks": "/dev/xvdb=410"
+      "ram": "3.75"
     },
     "digitalocean": {
       "flavor": "64",
