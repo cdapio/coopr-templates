@@ -2,6 +2,27 @@
   "name": "standard-2xlarge",
   "description": "Standard server - 2XLarge 30GB",
   "providermap": {
+    "aws-us-east-1": {
+      "flavor": "m3.2xlarge",
+      "cost": "0.560",
+      "vcpu": "4",
+      "ram": "15",
+      "disks": "/dev/xvdb=80"
+    },
+    "aws-us-west-1": {
+      "flavor": "m3.2xlarge",
+      "cost": "0.560",
+      "vcpu": "4",
+      "ram": "15",
+      "disks": "/dev/xvdb=80"
+    },
+    "aws-us-west-2": {
+      "flavor": "m3.2xlarge",
+      "cost": "0.560",
+      "vcpu": "4",
+      "ram": "15",
+      "disks": "/dev/xvdb=80"
+    },
     "digitalocean": {
       "flavor": "60",
       "cost": "0.476",
