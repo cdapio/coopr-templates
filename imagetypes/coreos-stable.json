@@ -1,0 +1,24 @@
+{
+  "name": "coreos-stable",
+  "description": "CoreOS Stable",
+  "providermap": {
+    "aws-us-east-1": {
+      "image": "ami-7e5d3d16"
+    },
+    "aws-us-west-1": {
+      "image": "ami-15fae850"
+    },
+    "aws-us-west-2": {
+      "image": "ami-4fd4857f"
+    },
+    "digitalocean": {
+      "image": "6886342"
+    },
+    "google": {
+      "image": "coreos-stable-494-4-0-v20141204"
+    },
+    "rackspace": {
+      "image": "749dc22a-9563-4628-b0d1-f84ced8c7b7a"
+    }
+  }
+}
