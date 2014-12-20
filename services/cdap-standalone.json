@@ -1,0 +1,42 @@
+{
+  "name": "cdap-standalone",
+  "description": "CDAP SDK (Standalone)",
+  "dependencies": {
+    "provides": [],
+    "conflicts": [],
+    "install": {
+      "requires": [],
+      "uses": []
+    },
+    "runtime": {
+      "requires": [],
+      "uses": []
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type": "docker",
+        "fields": {
+          "image_name": "caskdata/cdap-standalone:2.5.2",
+          "publish_ports": "9999,10000"
+        }
+      },
+      "start": {
+        "type": "docker",
+        "fields": {
+          "image_name": "caskdata/cdap-standalone:2.5.2",
+          "publish_ports": "9999,10000"
+        }
+      },
+      "stop": {
+        "type": "docker",
+        "fields": {
+          "image_name": "caskdata/cdap-standalone:2.5.2",
+          "publish_ports": "9999,10000"
+        }
+      }
+    }
+  },
+  "links": []
+}
