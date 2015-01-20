@@ -1,0 +1,54 @@
+{
+  "name": "cdap-security",
+  "description": "CDAP Security module",
+  "dependencies": {
+    "conflicts": [],
+    "install": {
+      "requires": [ "base" ],
+      "uses": [ "cdap" ]
+    },
+    "provides": [],
+    "runtime": {
+      "requires": [
+        "zookeeper-server"
+      ],
+      "uses": []
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type":"chef-solo",
+        "fields": {
+          "run_list": "recipe[cdap::repo_snapshot],recipe[cdap::security]"
+        }
+      },
+      "configure": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[cdap::config]"
+        }
+      },
+      "initialize": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[cdap::security_init]"
+        }
+      },
+      "start": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[hadoop_wrapper::default],recipe[cdap::security],recipe[coopr_service_manager::default]",
+          "json_attributes": "{\"coopr\": { \"node\": { \"services\": { \"cdap-auth-server\": \"start\" } } } }"
+        }
+      },
+      "stop": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[hadoop_wrapper::default],recipe[cdap::security],recipe[coopr_service_manager::default]",
+          "json_attributes": "{\"coopr\": { \"node\": { \"services\": { \"cdap-auth-server\": \"stop\" } } } }"
+        }
+      }
+    }
+  }
+}
