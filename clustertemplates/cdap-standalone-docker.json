@@ -43,6 +43,10 @@
       "step": 0
     }
   },
-  "links": [],
-  "includes": []
+  "links": [
+    {
+      "label": "CDAP Console",
+      "url": "http://%ip.access_v4.service.cdap%:9999"
+    }
+  ]
 }
