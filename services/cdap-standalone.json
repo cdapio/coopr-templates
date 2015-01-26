@@ -6,11 +6,11 @@
     "conflicts": ["cdap"],
     "install": {
       "requires": [],
-      "uses": []
+      "uses": ["docker"]
     },
     "runtime": {
       "requires": [],
-      "uses": []
+      "uses": ["docker"]
     }
   },
   "provisioner": {
