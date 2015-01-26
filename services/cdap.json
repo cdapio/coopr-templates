@@ -1,8 +1,8 @@
 {
   "name": "cdap",
-  "description": "Cask CDAP",
+  "description": "Cask DAP (CDAP)",
   "dependencies": {
-    "conflicts": [],
+    "conflicts": ["cdap-standalone"],
     "install": {
       "requires": [
         "base",

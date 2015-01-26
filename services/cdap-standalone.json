@@ -3,7 +3,7 @@
   "description": "CDAP SDK (Standalone) running in a Docker container (caskdata/cdap-standalone)",
   "dependencies": {
     "provides": [],
-    "conflicts": [],
+    "conflicts": ["cdap"],
     "install": {
       "requires": [],
       "uses": []
