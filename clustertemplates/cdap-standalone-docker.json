@@ -1,7 +1,6 @@
 {
   "name": "cdap-standalone-docker",
   "description": "CDAP SDK (Standalone) in a Docker container",
-  "version": 1,
   "defaults": {
     "services": [
       "cdap-standalone"
