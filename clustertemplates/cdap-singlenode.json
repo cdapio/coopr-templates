@@ -40,6 +40,9 @@
           "dfs.namenode.servicerpc-bind-host": "%ip.bind_v4.self%",
           "dfs.namenode.datanode.registration.ip-hostname-check": "false"
         },
+        "mapred_env": {
+          "hadoop_mapred_log_dir": "/data/logs/hadoop-mapreduce"
+        },
         "mapred_site": {
           "mapreduce.framework.name": "yarn",
           "mapreduce.map.java.opts": "-Xmx384m",
@@ -58,6 +61,8 @@
           "yarn_log_dir": "/data/logs/hadoop-yarn"
         },
         "yarn_site": {
+          "yarn.nodemanager.local-dirs": "/data/yarn/local",
+          "yarn.nodemanager.log-dirs": "/data/logs/hadoop-yarn/userlogs",
           "yarn.resourcemanager.hostname": "%host.service.hadoop-yarn-resourcemanager%",
           "yarn.resourcemanager.scheduler.address": "%host.service.hadoop-yarn-resourcemanager%:8030",
           "yarn.resourcemanager.resource-tracker.address": "%host.service.hadoop-yarn-resourcemanager%:8031",
