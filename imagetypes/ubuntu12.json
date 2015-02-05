@@ -15,7 +15,7 @@
       "sshuser": "ubuntu"
     },
     "digitalocean": {
-      "image": "6374128"
+      "image": "10321756"
     },
     "google": {
       "image": "ubuntu-1204-precise-v20141031",
