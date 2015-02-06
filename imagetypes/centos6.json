@@ -12,7 +12,7 @@
       "image": "ami-b158c981"
     },
     "digitalocean": {
-      "image": "6372108"
+      "image": "10325922"
     },
     "google": {
       "image": "centos-6-v20141108"
