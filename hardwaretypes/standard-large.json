@@ -3,25 +3,22 @@
   "description": "Standard server - Large 8GB",
   "providermap": {
     "aws-us-east-1": {
-      "flavor": "m1.large",
-      "cost": "0.175",
+      "flavor": "m3.large",
+      "cost": "0.140",
       "vcpu": "2",
-      "ram": "7.5",
-      "disks": "/dev/xvdb=420,/dev/xvdc=420"
+      "ram": "7.5"
     },
     "aws-us-west-1": {
-      "flavor": "m1.large",
-      "cost": "0.175",
+      "flavor": "m3.large",
+      "cost": "0.140",
       "vcpu": "2",
-      "ram": "7.5",
-      "disks": "/dev/xvdb=420,/dev/xvdc=420"
+      "ram": "7.5"
     },
     "aws-us-west-2": {
-      "flavor": "m1.large",
-      "cost": "0.175",
+      "flavor": "m3.large",
+      "cost": "0.140",
       "vcpu": "2",
-      "ram": "7.5",
-      "disks": "/dev/xvdb=420,/dev/xvdc=420"
+      "ram": "7.5"
     },
     "digitalocean": {
       "flavor": "65",
