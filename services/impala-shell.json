@@ -1,0 +1,37 @@
+{
+  "name": "impala-shell",
+  "description": "Impala Shell",
+  "dependencies": {
+    "conflicts": [],
+    "install": {
+      "requires": [ "base" ],
+      "uses": [ "kerberos-client" ]
+    },
+    "provides": [],
+    "runtime": {
+      "requires": [],
+      "uses": [
+        "kerberos-master",
+        "impala-catalog",
+        "impala-server",
+        "impala-state-store"
+      ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type":"chef-solo",
+        "fields": {
+          "run_list": "recipe[impala::shell]"
+        }
+      },
+      "configure": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[impala::config]"
+        }
+      }
+    }
+  }
+}
