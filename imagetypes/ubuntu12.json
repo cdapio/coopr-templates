@@ -18,7 +18,7 @@
       "image": "6374128"
     },
     "google": {
-      "image": "ubuntu-1204-precise-v20141031",
+      "image": "ubuntu-1204-precise-v20150127",
       "sshuser": "ubuntu"
     },
     "joyent": {
