@@ -85,11 +85,11 @@
           "hive_log_dir": "/data/logs/hive"
         },
         "hive_site": {
-          "javax.jdo.option.ConnectionURL": "jdbc:mysql://%host.service.mysql-server%:3306/hive?createDatabaseIfNotExist=true",
+          "javax.jdo.option.ConnectionURL": "jdbc:mysql://%ip.bind_v4.service.mysql-server%:3306/hive?createDatabaseIfNotExist=true",
           "javax.jdo.option.ConnectionDriverName": "com.mysql.jdbc.Driver",
           "javax.jdo.option.ConnectionUserName": "dbuser",
           "javax.jdo.option.ConnectionPassword": "dbuserpassword",
-          "hive.metastore.uris": "%join(map(host.service.hive-metastore,'thrift://$:9083'),',')%",
+          "hive.metastore.uris": "%join(map(ip.bind_v4.service.hive-metastore,'thrift://$:9083'),',')%",
           "hive.zookeeper.quorum": "%join(map(host.service.zookeeper-server,'$'),',')%",
           "hive.support.concurrency": "true"
         }
