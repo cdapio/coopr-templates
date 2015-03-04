@@ -1,0 +1,27 @@
+{
+  "name": "debian7",
+  "description": "Debian 7 (Wheezy) 64-bit",
+  "providermap": {
+    "aws-us-east-1": {
+      "image": "ami-74efab1c",
+      "sshuser": "admin"
+    },
+    "aws-us-west-1": {
+      "image": "ami-70b9a035",
+      "sshuser": "admin"
+    },
+    "aws-us-west-2": {
+      "image": "ami-a31a4293",
+      "sshuser": "admin"
+    },
+    "digitalocean": {
+      "image": "10322059"
+    },
+    "google": {
+      "image": "debian-7-wheezy-v20150226"
+    },
+    "joyent": {
+      "image": "5f41692e-a70d-11e4-8c2d-afc6735144dc"
+    }
+  }
+}
