@@ -1,0 +1,27 @@
+{
+  "name": "debian6",
+  "description": "Debian 6 (Squeeze) 64-bit",
+  "providermap": {
+    "aws-us-east-1": {
+      "image": "ami-5e12dc36",
+      "sshuser": "admin"
+    },
+    "aws-us-west-1": {
+      "image": "ami-6b3d3e2e",
+      "sshuser": "admin"
+    },
+    "aws-us-west-2": {
+      "image": "ami-01146c31",
+      "sshuser": "admin"
+    },
+    "digitalocean": {
+      "image": "6372581"
+    },
+    "joyent": {
+      "image": "94384a12-bbeb-11e2-aec2-2bfa9742484b"
+    },
+    "rackspace": {
+      "image": "cad1e45d-fcb9-489d-850c-a61c0537fa55"
+    }
+  }
+}
