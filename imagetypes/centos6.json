@@ -15,13 +15,13 @@
       "image": "10325922"
     },
     "google": {
-      "image": "centos-6-v20150127"
+      "image": "centos-6-v20150226"
     },
     "joyent": {
-      "image": "f37b10cc-6a9f-11e4-9181-e3d137d947bf"
+      "image": "5becfd74-a70d-11e4-93a6-470507be237c"
     },
     "rackspace": {
-      "image": "3ab30cc6-c503-41d3-8a37-106fda7848a7"
+      "image": "2318853e-f3b1-4cf4-b1a4-d7db71ca9b50"
     }
   }
 }
