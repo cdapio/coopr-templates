@@ -1,0 +1,15 @@
+{
+  "name": "centos7",
+  "description": "CentOS 7 64-bit",
+  "providermap": {
+    "digitalocean": {
+      "image": "10322623"
+    },
+    "google": {
+      "image": "centos-7-v20150226"
+    },
+    "joyent": {
+      "image": "02dbab66-a70a-11e4-819b-b3dc41b361d6"
+    }
+  }
+}
