@@ -30,6 +30,12 @@
           "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::default]"
         }
       },
+      "initialize": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[hadoop_wrapper::hadoop_mapreduce_historyserver_init]"
+        }
+      },
       "start": {
         "type": "chef-solo",
         "fields": {
