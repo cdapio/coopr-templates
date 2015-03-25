@@ -1,0 +1,32 @@
+{
+  "name": "ubuntu14",
+  "description": "Ubuntu 14.04 LTS (Trusty Tahr) 64-bit",
+  "providermap": {
+    "aws-us-east-1": {
+      "image": "ami-3e8ad556",
+      "sshuser": "ubuntu"
+    },
+    "aws-us-west-1": {
+      "image": "ami-17876353",
+      "sshuser": "ubuntu"
+    },
+    "aws-us-west-2": {
+      "image": "ami-ef3414df",
+      "sshuser": "ubuntu"
+    },
+    "digitalocean": {
+      "image": "9801950"
+    },
+    "google": {
+      "image": "ubuntu-1404-trusty-v20150128",
+      "sshuser": "ubuntu"
+    },
+    "joyent": {
+      "image": "c864f104-624c-43d2-835e-b49a39709b6b",
+      "sshuser": "ubuntu"
+    },
+    "rackspace": {
+      "image": "28d39e78-a41c-4fd2-80b4-dc960c055074"
+    }
+  }
+}

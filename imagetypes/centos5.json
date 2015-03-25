@@ -1,0 +1,15 @@
+{
+  "name": "centos5",
+  "description": "CentOS 5 64-bit",
+  "providermap": {
+    "digitalocean": {
+      "image": "6372321"
+    },
+    "joyent": {
+      "image": "2539f6de-0b5a-11e2-b647-fb08c3503fb2"
+    },
+    "rackspace": {
+      "image": "d2fa624e-a6ec-4752-a738-81fc4b2462af"
+    }
+  }
+}
