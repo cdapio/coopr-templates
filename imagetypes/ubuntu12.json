@@ -3,15 +3,15 @@
   "description": "Ubuntu 12.04 LTS (Precise Pangolin) 64-bit",
   "providermap": {
     "aws-us-east-1": {
-      "image": "ami-ecda6c84",
+      "image": "ami-d6cf93be",
       "sshuser": "ubuntu"
     },
     "aws-us-west-1": {
-      "image": "ami-115c5754",
+      "image": "ami-b1a044f5",
       "sshuser": "ubuntu"
     },
     "aws-us-west-2": {
-      "image": "ami-ad42009d",
+      "image": "ami-75755545",
       "sshuser": "ubuntu"
     },
     "digitalocean": {
@@ -22,11 +22,11 @@
       "sshuser": "ubuntu"
     },
     "joyent": {
-      "image": "01a24b88-f957-4f9d-9946-fbd21b0612bf",
+      "image": "415e39e6-26f1-48c4-85b1-9697066fc1a9",
       "sshuser": "ubuntu"
     },
     "rackspace": {
-      "image": "2f85a777-9ffd-4b49-a60e-1155ceb93a5e"
+      "image": "71893ec7-b625-44a5-b333-ca19885b941d"
     }
   }
 }
