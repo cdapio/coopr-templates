@@ -36,7 +36,8 @@
           "hadoop_mapred_log_dir": "/data/logs/hadoop-mapreduce"
         },
         "mapred_site": {
-          "mapreduce.framework.name": "yarn"
+          "mapreduce.framework.name": "yarn",
+          "mapreduce.jobhistory.address": "%ip.bind_v4.service.hadoop-mapreduce-historyserver%:10020"
         },
         "yarn_env": {
           "yarn_log_dir": "/data/logs/hadoop-yarn"

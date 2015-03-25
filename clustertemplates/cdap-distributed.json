@@ -50,7 +50,8 @@
           "mapreduce.job.maps": "3",
           "mapreduce.job.reduces": "3",
           "mapreduce.task.io.sort.factor": "25",
-          "mapreduce.task.io.sort.mb": "250"
+          "mapreduce.task.io.sort.mb": "250",
+          "mapreduce.jobhistory.address": "%ip.bind_v4.service.hadoop-mapreduce-historyserver%:10020"
         },
         "yarn": {
           "memory_percent": "75"
