@@ -8,6 +8,7 @@
       "hadoop-hdfs-datanode",
       "hadoop-yarn-resourcemanager",
       "hadoop-yarn-nodemanager",
+      "hadoop-mapreduce-historyserver",
       "zookeeper-server",
       "hbase-master",
       "hbase-regionserver",
@@ -51,7 +52,7 @@
           "mapreduce.job.reduces": "3",
           "mapreduce.task.io.sort.factor": "10",
           "mapreduce.task.io.sort.mb": "100",
-          "mapreduce.jobhistory.address": "%ip.bind_v4.service.hadoop-mapreduce-historyserver%:10020"
+          "mapreduce.jobhistory.address": "%ip.bind_v4.self%:10020"
         },
         "yarn": {
           "memory_percent": "75"
