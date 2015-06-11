@@ -1,9 +1,13 @@
 # Coopr Templates
 
-This repository contains the default set of templates used by [Coopr](http://coopr.io) by Cask and some helper scripts to work with the templates.
+This repository contains the default set of templates used by [Coopr](http://coopr.io) by Cask and
+some helper scripts to work with the templates.
 
 ## Templates
-Templates fall into one of two categories, templates which define hardware, and templates which define software.
+Templates fall into one of two categories, templates which define hardware, and templates which define
+software. The hardware templates define variables used to provision compute resources on the public or
+private cloud and correspond to Provider plugins. The software templates define automation capabilities
+and configuration for Automator plugins.
 
 ### Hardware
 - providers - set of credentials and variables used to connect to provider APIs
@@ -62,7 +66,7 @@ Bugs and suggestions should be made by filing a Jira at https://issues.cask.co/b
 
 ## License
 
-   Copyright © 2014 Cask Data, Inc.
+   Copyright © 2014-2015 Cask Data, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
 software except in compliance with the License. You may obtain a copy of the License at
