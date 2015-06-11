@@ -55,9 +55,9 @@
   },
   "administration": {
     "leaseduration": {
-      "initial":0,
-      "max":0,
-      "step":0
+      "initial": 0,
+      "max": 0,
+      "step": 0
     }
   }
 }
