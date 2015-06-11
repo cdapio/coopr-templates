@@ -115,6 +115,10 @@
           "gateway.memory.mb": "512",
           "dataset.executor.container.memory.mb": "512",
           "explore.executor.container.memory.mb": "1024",
+          "kafka.seed.brokers": "%join(map(host.service.cdap,'$:9092'),',')%",
+          "zookeeper.quorum": "%join(map(host.service.zookeeper-server,'$:2181'),',')%/cdap",
+          "root.namespace": "cdap",
+          "kafka.default.replication.factor": "1",
           "explore.enabled": "true"
         }
       },
