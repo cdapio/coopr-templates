@@ -155,7 +155,8 @@
       "mysql-server",
       "hive-metastore-database",
       "hive-metastore",
-      "hive-server2"
+      "hive-server2",
+      "spark-historyserver"
     ]
   },
   "constraints": {
@@ -174,6 +175,7 @@
           "hadoop-hdfs-namenode",
           "hadoop-yarn-resourcemanager",
           "hadoop-mapreduce-historyserver",
+          "spark-historyserver",
           "hbase-master",
           "mysql-server",
           "zookeeper-server",
