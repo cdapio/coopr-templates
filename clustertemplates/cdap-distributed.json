@@ -152,6 +152,7 @@
       "hbase-master",
       "hbase-regionserver",
       "cdap",
+      "cdap-security",
       "mysql-server",
       "hive-metastore-database",
       "hive-metastore",
@@ -180,6 +181,7 @@
           "mysql-server",
           "zookeeper-server",
           "cdap",
+          "cdap-security",
           "mysql-server",
           "hive-metastore",
           "hive-metastore-database"
@@ -236,6 +238,12 @@
         }
       },
       "cdap": {
+        "quantities": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "cdap-security": {
         "quantities": {
           "min": 1,
           "max": 1
