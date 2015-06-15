@@ -161,8 +161,7 @@
     ],
     "imagetypes": [
       "centos6",
-      "ubuntu12",
-      "Fedora19"
+      "ubuntu12"
     ],
     "services": [
       "base",
@@ -179,7 +178,8 @@
       "mysql-server",
       "hive-metastore-database",
       "hive-metastore",
-      "hive-server2"
+      "hive-server2",
+      "spark-historyserver"
     ]
   },
   "constraints": {
