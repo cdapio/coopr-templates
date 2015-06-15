@@ -15,7 +15,7 @@
       "sshuser": "ubuntu"
     },
     "digitalocean": {
-      "image": "9801950"
+      "image": "11836690"
     },
     "google": {
       "image": "ubuntu-1404-trusty-v20150128",
