@@ -12,7 +12,7 @@
       "image": "ami-4fd4857f"
     },
     "digitalocean": {
-      "image": "6886342"
+      "image": "12247463"
     },
     "google": {
       "image": "coreos-stable-522-6-0-v20150128"
