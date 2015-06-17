@@ -129,7 +129,7 @@
           "data.tx.memory.mb": "256",
           "gateway.memory.mb": "256",
           "kerberos.auth.enabled": "false",
-          "log.saver.run.memory.megs": "256",
+          "log.saver.run.memory.megs": "512",
           "master.service.memory.mb": "256",
           "metrics.memory.mb": "256",
           "metrics.processor.memory.mb": "256",
