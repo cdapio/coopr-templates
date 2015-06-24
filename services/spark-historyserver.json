@@ -10,7 +10,11 @@
     "provides": [],
     "runtime": {
       "requires": [],
-      "uses": [ "kerberos-master" ]
+      "uses": [
+        "kerberos-master",
+        "hadoop-hdfs-namenode",
+        "hadoop-yarn-resourcemanager"
+      ]
     }
   },
   "provisioner": {
