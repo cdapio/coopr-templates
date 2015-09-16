@@ -27,12 +27,6 @@
           "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::zookeeper_server]"
         }
       },
-      "initialize": {
-        "type": "chef-solo",
-        "fields": {
-          "run_list": "recipe[hadoop_wrapper::zookeeper_server_init]"
-        }
-      },
       "start": {
         "type": "chef-solo",
         "fields": {
