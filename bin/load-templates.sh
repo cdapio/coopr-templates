@@ -5,7 +5,7 @@ COOPR_SERVER_URI=${COOPR_SERVER_URI:-http://localhost:55054}
 COOPR_API_USER=${COOPR_API_USER:-admin}
 COOPR_API_KEY=${COOPR_API_KEY:-1234567890abcdef}
 COOPR_TENANT=${COOPR_TENANT:-superadmin}
-MAINDIR=$(dirname $(cd $(dirname ${BASH_SOURCE[0]}) && pwd))
+MAINDIR=${COOPR_TEMPLATE_DIR:-$(dirname $(cd $(dirname ${BASH_SOURCE[0]}) && pwd))}
 
 if [ -z "$CERT_PARAMETER" ]; then
   if [ -n "$TRUST_CERT_PATH" ] && [ -n "$TRUST_CERT_PASSWORD" ]; then
