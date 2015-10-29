@@ -1,0 +1,32 @@
+{
+  "name": "hadoop-client",
+  "description": "Configures Hadoop/Yarn libraries and client",
+  "dependencies": {
+    "conflicts": [],
+    "install": {
+      "requires": [ "base" ],
+      "uses": [ "kerberos-client" ]
+    },
+    "provides": [],
+    "runtime": {
+      "requires": [],
+      "uses": [ "kerberos-master" ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type":"chef-solo",
+        "fields": {
+          "run_list": "recipe[hadoop_wrapper::default]"
+        }
+      },
+      "configure": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[hadoop_wrapper::default]"
+        }
+      }
+    }
+  }
+}
