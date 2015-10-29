@@ -10,7 +10,11 @@
         "hbase-master",
         "zookeeper-server"
       ],
-      "uses": []
+      "uses": [
+        "hadoop-client",
+        "hbase-client",
+        "hive-client"
+      ]
     },
     "provides": [],
     "runtime": {
