@@ -9,7 +9,9 @@
       ],
       "uses": []
     },
-    "provides": [],
+    "provides": [
+      "hive-client"
+    ],
     "runtime": {
       "requires": [
         "hadoop-hdfs-namenode",

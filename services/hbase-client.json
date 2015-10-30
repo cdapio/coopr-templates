@@ -1,0 +1,32 @@
+{
+  "name": "hbase-client",
+  "description": "Configures HBase libraries and client",
+  "dependencies": {
+    "conflicts": [],
+    "install": {
+      "requires": [ "base" ],
+      "uses": [ "kerberos-client" ]
+    },
+    "provides": [],
+    "runtime": {
+      "requires": [],
+      "uses": [ "kerberos-master" ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type":"chef-solo",
+        "fields": {
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hbase]"
+        }
+      },
+      "configure": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hbase]"
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,9 @@
       "requires": [ "base" ],
       "uses": [ "kerberos-client" ]
     },
-    "provides": [],
+    "provides": [
+      "hadoop-client"
+    ],
     "runtime": {
       "requires": [ "hadoop-hdfs-namenode", "hadoop-hdfs-datanode" ],
       "uses": [ "kerberos-master" ]

@@ -7,7 +7,9 @@
       "requires": [ "base", "zookeeper-server" ],
       "uses": [ "kerberos-client" ]
     },
-    "provides": [],
+    "provides": [
+      "hbase-client"
+    ],
     "runtime": {
       "requires": [
         "hbase-master",
