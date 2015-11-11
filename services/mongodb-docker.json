@@ -1,0 +1,45 @@
+{
+  "name": "mongodb-docker",
+  "description": "Apache Cassandra running in a Docker container (mongo)",
+  "dependencies": {
+    "provides": [ "mongodb" ],
+    "conflicts": [],
+    "install": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    },
+    "runtime": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type": "docker",
+        "fields": {
+          "image_name": "mongo",
+          "publish_ports": "27017"
+        }
+      },
+      "start": {
+        "type": "docker",
+        "fields": {
+          "image_name": "mongo",
+          "publish_ports": "27017"
+        }
+      },
+      "stop": {
+        "type": "docker",
+        "fields": {
+          "image_name": "mongo",
+          "publish_ports": "27017"
+        }
+      }
+    }
+  }
+}

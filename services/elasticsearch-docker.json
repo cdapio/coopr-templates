@@ -1,0 +1,45 @@
+{
+  "name": "elasticsearch-docker",
+  "description": "Apache Cassandra running in a Docker container (elasticsearch)",
+  "dependencies": {
+    "provides": [ "elasticsearch" ],
+    "conflicts": [],
+    "install": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    },
+    "runtime": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type": "docker",
+        "fields": {
+          "image_name": "elasticsearch",
+          "publish_ports": "9200,9300"
+        }
+      },
+      "start": {
+        "type": "docker",
+        "fields": {
+          "image_name": "elasticsearch",
+          "publish_ports": "9200,9300"
+        }
+      },
+      "stop": {
+        "type": "docker",
+        "fields": {
+          "image_name": "elasticsearch",
+          "publish_ports": "9200,9300"
+        }
+      }
+    }
+  }
+}
