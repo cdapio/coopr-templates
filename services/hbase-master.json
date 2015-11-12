@@ -30,7 +30,7 @@
       "configure": {
         "type": "chef-solo",
         "fields": {
-          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hbase]"
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hbase_master]"
         }
       },
       "initialize": {

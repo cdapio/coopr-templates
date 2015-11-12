@@ -29,7 +29,7 @@
       "configure": {
         "type": "chef-solo",
         "fields": {
-          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::default]"
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hadoop_hdfs_datanode]"
         }
       },
       "start": {
