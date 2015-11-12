@@ -29,7 +29,7 @@
     "actions": {
       "configure": {
         "fields": {
-          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hive]"
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hive_metastore]"
         },
         "type": "chef-solo"
       },
