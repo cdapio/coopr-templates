@@ -29,7 +29,7 @@
       "base",
       "cassandra-docker",
       "cdap-standalone",
-      "coopr-standalone"
+      "coopr-standalone",
       "docker",
       "elasticsearch-docker",
       "mongodb-docker"
