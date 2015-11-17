@@ -1,6 +1,6 @@
 {
   "name": "mongodb-docker",
-  "description": "Apache Cassandra running in a Docker container (mongo)",
+  "description": "MongoDB running in a Docker container (mongo)",
   "dependencies": {
     "provides": [ "mongodb" ],
     "conflicts": [],
