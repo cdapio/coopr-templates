@@ -24,7 +24,7 @@
     "actions": {
       "configure": {
         "fields": {
-          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hive]"
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hive_server2]"
         },
         "type": "chef-solo"
       },

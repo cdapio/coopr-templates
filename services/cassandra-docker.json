@@ -1,0 +1,45 @@
+{
+  "name": "cassandra-docker",
+  "description": "Apache Cassandra running in a Docker container (cassandra)",
+  "dependencies": {
+    "provides": [ "cassandra" ],
+    "conflicts": [],
+    "install": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    },
+    "runtime": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type": "docker",
+        "fields": {
+          "image_name": "cassandra",
+          "publish_ports": "7000"
+        }
+      },
+      "start": {
+        "type": "docker",
+        "fields": {
+          "image_name": "cassandra",
+          "publish_ports": "7000"
+        }
+      },
+      "stop": {
+        "type": "docker",
+        "fields": {
+          "image_name": "cassandra",
+          "publish_ports": "7000"
+        }
+      }
+    }
+  }
+}

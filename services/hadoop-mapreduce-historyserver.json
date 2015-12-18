@@ -5,7 +5,10 @@
     "conflicts": [],
     "install": {
       "requires": [ "base" ],
-      "uses": [ "kerberos-client" ]
+      "uses": [
+        "kerberos-client",
+        "hadoop-yarn-resourcemanager"
+      ]
     },
     "provides": [],
     "runtime": {
@@ -27,7 +30,13 @@
       "configure": {
         "type": "chef-solo",
         "fields": {
-          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::default]"
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hadoop_mapreduce_historyserver]"
+        }
+      },
+      "initialize": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[hadoop_wrapper::hadoop_mapreduce_historyserver_init]"
         }
       },
       "start": {

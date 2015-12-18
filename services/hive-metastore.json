@@ -9,7 +9,9 @@
       ],
       "uses": []
     },
-    "provides": [],
+    "provides": [
+      "hive-client"
+    ],
     "runtime": {
       "requires": [
         "hadoop-hdfs-namenode",
@@ -27,7 +29,7 @@
     "actions": {
       "configure": {
         "fields": {
-          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hive]"
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hive_metastore]"
         },
         "type": "chef-solo"
       },

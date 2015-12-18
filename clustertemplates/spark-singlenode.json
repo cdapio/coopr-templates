@@ -1,29 +1,27 @@
 {
-  "name": "mongodb-singlenode",
-  "description": "Single-node single-instance MongoDB",
+  "name": "spark-singlenode",
+  "description": "Spark standalone on a single node",
   "defaults": {
     "services": [
       "base",
-      "mongodb-single"
+      "spark-master",
+      "spark-worker",
+      "spark-historyserver"
     ],
     "provider": "rackspace",
-    "hardwaretype": "standard-medium",
+    "hardwaretype": "standard-large",
     "imagetype": "ubuntu12",
     "config": {
-      "mongodb": {
-        "config": {
-          "bind_ip": "%ip.bind_v4.service.mongodb-single%",
-          "dbpath": "/data/mongodb"
-        },
-        "default_init_name": "mongodb",
-        "instance_name": "mongodb"
+      "spark": {
+        "spark_env": {
+          "standalone_spark_master_host": "%host.service.spark-master%",
+          "spark_master_ip": "%host.service.spark-master%"
+        }
       }
     }
   },
   "compatibility": {
     "hardwaretypes": [
-      "standard-small",
-      "standard-medium",
       "standard-large",
       "standard-xlarge",
       "standard-2xlarge"
@@ -34,7 +32,9 @@
     ],
     "services": [
       "base",
-      "mongodb-single"
+      "spark-master",
+      "spark-worker",
+      "spark-historyserver"
     ]
   },
   "constraints": {
@@ -45,9 +45,9 @@
   },
   "administration": {
     "leaseduration": {
-      "initial": 0,
-      "max": 0,
-      "step": 0
+      "initial": "0",
+      "max": "0",
+      "step": "0"
     }
   }
 }

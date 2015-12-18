@@ -8,6 +8,7 @@
       "hadoop-hdfs-datanode",
       "hadoop-yarn-resourcemanager",
       "hadoop-yarn-nodemanager",
+      "hadoop-mapreduce-historyserver",
       "zookeeper-server",
       "hbase-master",
       "hbase-regionserver",
@@ -50,7 +51,8 @@
           "mapreduce.job.maps": "3",
           "mapreduce.job.reduces": "3",
           "mapreduce.task.io.sort.factor": "10",
-          "mapreduce.task.io.sort.mb": "100"
+          "mapreduce.task.io.sort.mb": "100",
+          "mapreduce.jobhistory.address": "%ip.bind_v4.self%:10020"
         },
         "yarn": {
           "memory_percent": "75"
@@ -68,6 +70,7 @@
           "yarn.resourcemanager.resource-tracker.address": "%host.service.hadoop-yarn-resourcemanager%:8031",
           "yarn.resourcemanager.address": "%host.service.hadoop-yarn-resourcemanager%:8032",
           "yarn.resourcemanager.admin.address": "%host.service.hadoop-yarn-resourcemanager%:8033",
+          "yarn.scheduler.capacity.maximum-am-resource-percent": "0.4",
           "yarn.scheduler.minimum-allocation-mb": "256"
         }
       },
@@ -127,11 +130,14 @@
           "data.tx.memory.mb": "256",
           "gateway.memory.mb": "256",
           "kerberos.auth.enabled": "false",
-          "log.saver.run.memory.megs": "256",
+          "log.saver.run.memory.megs": "512",
           "master.service.memory.mb": "256",
+          "master.service.num.cores": "1",
           "metrics.memory.mb": "256",
+          "metrics.num.cores": "2",
           "metrics.processor.memory.mb": "256",
           "stream.container.memory.mb": "256",
+          "stream.container.num.cores": "1",
           "dataset.executor.container.memory.mb": "256",
           "explore.executor.container.memory.mb": "1024",
           "metrics.processor.num.instances": "1",
@@ -159,8 +165,7 @@
     ],
     "imagetypes": [
       "centos6",
-      "ubuntu12",
-      "Fedora19"
+      "ubuntu12"
     ],
     "services": [
       "base",
@@ -177,13 +182,14 @@
       "mysql-server",
       "hive-metastore-database",
       "hive-metastore",
-      "hive-server2"
+      "hive-server2",
+      "spark-historyserver"
     ]
   },
   "constraints": {
     "size": {
-      "min": "1",
-      "max": "1"
+      "min": 1,
+      "max": 1
     }
   }
 }

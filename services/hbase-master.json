@@ -7,7 +7,9 @@
       "requires": [ "base", "zookeeper-server" ],
       "uses": [ "kerberos-client" ]
     },
-    "provides": [],
+    "provides": [
+      "hbase-client"
+    ],
     "runtime": {
       "requires": [
         "hadoop-hdfs-namenode",
@@ -28,7 +30,7 @@
       "configure": {
         "type": "chef-solo",
         "fields": {
-          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hbase]"
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hbase_master]"
         }
       },
       "initialize": {
