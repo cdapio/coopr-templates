@@ -8,6 +8,7 @@
       "hadoop-hdfs-datanode",
       "hadoop-yarn-resourcemanager",
       "hadoop-yarn-nodemanager",
+      "hadoop-mapreduce-historyserver",
       "zookeeper-server",
       "hbase-master",
       "hbase-regionserver",
@@ -50,7 +51,8 @@
           "mapreduce.job.maps": "3",
           "mapreduce.job.reduces": "3",
           "mapreduce.task.io.sort.factor": "25",
-          "mapreduce.task.io.sort.mb": "250"
+          "mapreduce.task.io.sort.mb": "250",
+          "mapreduce.jobhistory.address": "%ip.bind_v4.service.hadoop-mapreduce-historyserver%:10020"
         },
         "yarn": {
           "memory_percent": "75"
@@ -113,6 +115,10 @@
           "gateway.memory.mb": "512",
           "dataset.executor.container.memory.mb": "512",
           "explore.executor.container.memory.mb": "1024",
+          "kafka.seed.brokers": "%join(map(host.service.cdap,'$:9092'),',')%",
+          "zookeeper.quorum": "%join(map(host.service.zookeeper-server,'$:2181'),',')%/cdap",
+          "root.namespace": "cdap",
+          "kafka.default.replication.factor": "1",
           "explore.enabled": "true"
         }
       },
@@ -150,16 +156,18 @@
       "hbase-master",
       "hbase-regionserver",
       "cdap",
+      "cdap-security",
       "mysql-server",
       "hive-metastore-database",
       "hive-metastore",
-      "hive-server2"
+      "hive-server2",
+      "spark-historyserver"
     ]
   },
   "constraints": {
     "size": {
-      "min": "3",
-      "max": "100"
+      "min": 3,
+      "max": 100
     },
     "layout": {
       "mustcoexist": [
@@ -172,10 +180,12 @@
           "hadoop-hdfs-namenode",
           "hadoop-yarn-resourcemanager",
           "hadoop-mapreduce-historyserver",
+          "spark-historyserver",
           "hbase-master",
           "mysql-server",
           "zookeeper-server",
           "cdap",
+          "cdap-security",
           "mysql-server",
           "hive-metastore",
           "hive-metastore-database"
@@ -232,6 +242,12 @@
         }
       },
       "cdap": {
+        "quantities": {
+          "min": 1,
+          "max": 1
+        }
+      },
+      "cdap-security": {
         "quantities": {
           "min": 1,
           "max": 1

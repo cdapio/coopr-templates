@@ -1,0 +1,52 @@
+{
+  "name": "coopr-standalone-docker",
+  "description": "Coopr Standalone in a Docker container",
+  "defaults": {
+    "services": [
+      "coopr-standalone"
+    ],
+    "provider": "rackspace",
+    "hardwaretype": "standard-medium",
+    "imagetype": "coreos-stable",
+    "config": {}
+  },
+  "compatibility": {
+    "hardwaretypes": [
+      "standard-2xlarge",
+      "standard-large",
+      "standard-medium",
+      "standard-small",
+      "standard-xlarge"
+    ],
+    "imagetypes": [
+      "coreos-stable"
+    ],
+    "services": [
+      "coopr-standalone"
+    ]
+  },
+  "constraints": {
+    "layout": {
+      "mustcoexist": [],
+      "cantcoexist": []
+    },
+    "services": {},
+    "size": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  "administration": {
+    "leaseduration": {
+      "initial": 0,
+      "max": 0,
+      "step": 0
+    }
+  },
+  "links": [
+    {
+      "label": "Coopr UI",
+      "url": "http://%ip.access_v4.service.coopr%:8100"
+    }
+  ]
+}

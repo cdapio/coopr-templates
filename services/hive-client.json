@@ -1,0 +1,32 @@
+{
+  "name": "hive-client",
+  "description": "Configures Hive libraries and client",
+  "dependencies": {
+    "conflicts": [],
+    "install": {
+      "requires": [ "base" ],
+      "uses": [ "kerberos-client" ]
+    },
+    "provides": [],
+    "runtime": {
+      "requires": [],
+      "uses": [ "kerberos-master" ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type":"chef-solo",
+        "fields": {
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hive]"
+        }
+      },
+      "configure": {
+        "type": "chef-solo",
+        "fields": {
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hive]"
+        }
+      }
+    }
+  }
+}

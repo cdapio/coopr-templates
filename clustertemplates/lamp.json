@@ -91,21 +91,21 @@
     "services": {
       "haproxy": {
         "quantities": {
-          "max": "1"
+          "max": 1
         }
       },
       "mysql-server": {
         "quantities": {
-          "max": "1"
+          "max": 1
         }
       }
     }
   },
   "administration": {
     "leaseduration": {
-      "initial":0,
-      "max":0,
-      "step":0
+      "initial": 0,
+      "max": 0,
+      "step": 0
     }
   }
 }

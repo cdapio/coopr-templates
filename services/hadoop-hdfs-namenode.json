@@ -7,7 +7,9 @@
       "requires": [ "base" ],
       "uses": [ "kerberos-client" ]
     },
-    "provides": [],
+    "provides": [
+      "hadoop-client"
+    ],
     "runtime": {
       "requires": [],
       "uses": [ "kerberos-master" ]
@@ -24,7 +26,7 @@
       "configure": {
         "type": "chef-solo",
         "fields": {
-          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::default]"
+          "run_list": "recipe[hadoop_wrapper::default],recipe[hadoop::hadoop_hdfs_namenode]"
         }
       },
       "initialize": {
