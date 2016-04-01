@@ -70,8 +70,10 @@
           "yarn.resourcemanager.resource-tracker.address": "%host.service.hadoop-yarn-resourcemanager%:8031",
           "yarn.resourcemanager.address": "%host.service.hadoop-yarn-resourcemanager%:8032",
           "yarn.resourcemanager.admin.address": "%host.service.hadoop-yarn-resourcemanager%:8033",
-          "yarn.scheduler.capacity.maximum-am-resource-percent": "0.4",
           "yarn.scheduler.minimum-allocation-mb": "256"
+        },
+        "capacity_scheduler": {
+          "yarn.scheduler.capacity.maximum-am-resource-percent": "0.4"
         }
       },
       "hbase": {
