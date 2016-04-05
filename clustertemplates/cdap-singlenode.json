@@ -73,7 +73,8 @@
           "yarn.scheduler.minimum-allocation-mb": "256"
         },
         "capacity_scheduler": {
-          "yarn.scheduler.capacity.maximum-am-resource-percent": "0.4"
+          "yarn.scheduler.capacity.maximum-am-resource-percent": "0.4",
+          "yarn.scheduler.capacity.root.default.maximum-am-resource-percent": "0.4"
         }
       },
       "hbase": {
