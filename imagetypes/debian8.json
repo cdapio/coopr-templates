@@ -1,0 +1,9 @@
+{
+  "name": "debian8",
+  "description": "Debian 8 (Jessie) 64-bit",
+  "providermap": {
+    "google": {
+      "image": "debian-8-jessie-v20160329"
+    }
+  }
+}

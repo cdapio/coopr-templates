@@ -1,0 +1,9 @@
+{
+  "name": "rhel7",
+  "description": "Redhat Enterprise Linux 7 64-bit",
+  "providermap": {
+    "google": {
+      "image": "rhel-7-v20160329"
+    }
+  }
+}
