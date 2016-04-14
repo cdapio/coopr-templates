@@ -1,6 +1,6 @@
 {
   "name": "centos6",
-  "description": "CentOS 6.5 64-bit",
+  "description": "CentOS 6 64-bit",
   "providermap": {
     "aws-us-east-1": {
       "image": "ami-eb6b0182"
@@ -15,7 +15,7 @@
       "image": "11523085"
     },
     "google": {
-      "image": "centos-6-v20160216"
+      "image": "centos-6-v20160329"
     },
     "joyent": {
       "image": "5becfd74-a70d-11e4-93a6-470507be237c"
