@@ -20,7 +20,14 @@
       "standard-2xlarge"
     ],
     "imagetypes": [
+      "centos5",
       "centos6",
+      "centos7",
+      "debian6",
+      "debian7",
+      "debian8",
+      "rhel6",
+      "rhel7",
       "ubuntu12"
     ],
     "services": [
