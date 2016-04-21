@@ -1,0 +1,55 @@
+{
+  "name": "ambari",
+  "description": "Ambari Server + Agent(s) on all nodes",
+  "defaults": {
+    "services": [
+      "base",
+      "ambari-server",
+      "ambari-agent"
+    ],
+    "provider": "rackspace",
+    "hardwaretype": "standard-xlarge",
+    "imagetype": "ubuntu12",
+    "config": {
+      "ambari": {
+        "server_url": "%host.service.ambari-server%",
+        "version": "2.2.1",
+        "rhel_6_repo": "http://public-repo-1.hortonworks.com/ambari/centos6/2.x/updates/2.2.1.1/ambari.repo",
+        "ubuntu_12_repo": "http://public-repo-1.hortonworks.com/ambari/ubuntu12/2.x/updates/2.2.1.1"
+      }
+    }
+  },
+  "compatibility": {
+    "hardwaretypes": [
+      "standard-xlarge",
+      "standard-2xlarge"
+    ],
+    "imagetypes": [
+      "centos6",
+      "ubuntu12"
+    ],
+    "services": [
+      "base",
+      "ambari-server",
+      "ambari-agent",
+      "kerberos-client"
+    ]
+  },
+  "constraints": {
+    "services": {
+      "ambari-server": {
+        "quantities": {
+          "min": 1,
+          "max": 1
+        }
+      }
+    }
+  },
+  "administration": {
+    "leaseduration": {
+      "initial":0,
+      "max":0,
+      "step":0
+    }
+  }
+}
