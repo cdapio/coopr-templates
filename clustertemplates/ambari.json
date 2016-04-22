@@ -12,7 +12,7 @@
     "imagetype": "ubuntu12",
     "config": {
       "ambari": {
-        "server_url": "%host.service.ambari-server%",
+        "server_fqdn": "%host.service.ambari-server%",
         "version": "2.2.1",
         "rhel_6_repo": "http://public-repo-1.hortonworks.com/ambari/centos6/2.x/updates/2.2.1.1/ambari.repo",
         "ubuntu_12_repo": "http://public-repo-1.hortonworks.com/ambari/ubuntu12/2.x/updates/2.2.1.1"
