@@ -266,5 +266,27 @@
         }
       }
     }
-  }
+  },
+  "links": [
+    {
+      "label": "Hadoop HDFS NameNode UI",
+      "url": "http://%ip.access_v4.service.hadoop-hdfs-namenode%:50070"
+    },
+    {
+      "label": "Hadoop YARN ResourceManager UI",
+      "url": "http://%ip.access_v4.service.hadoop-yarn-resourcemanager%:8088"
+    },
+    {
+      "label": "Hadoop MapReduce HistoryServer UI",
+      "url": "http://%ip.access_v4.service.hadoop-mapreduce-historyserver%:10020"
+    },
+    {
+      "label": "HBase Master UI",
+      "url": "http://%ip.access_v4.service.hbase-master%:60010"
+    },
+    {
+      "label": "CDAP UI",
+      "url": "http://%ip.access_v4.service.cdap%:9999"
+    }
+  ]
 }

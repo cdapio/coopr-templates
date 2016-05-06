@@ -107,5 +107,11 @@
       "max": 0,
       "step": 0
     }
-  }
+  },
+  "links": [
+    {
+      "label": "Apache HTTPd",
+      "url": "http://%ip.access_v4.service.apache-httpd%:80"
+    }
+  ]
 }
