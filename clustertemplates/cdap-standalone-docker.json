@@ -45,8 +45,8 @@
   },
   "links": [
     {
-      "label": "CDAP Console",
-      "url": "http://%ip.access_v4.service.cdap%:9999"
+      "label": "CDAP UI",
+      "url": "http://%ip.access_v4.service.cdap-standalone%:9999"
     }
   ]
 }
