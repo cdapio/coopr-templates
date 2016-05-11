@@ -7,7 +7,9 @@
       "requires": [ "base" ],
       "uses": [ "kerberos-client" ]
     },
-    "provides": [],
+    "provides": [
+      "spark-client"
+    ],
     "runtime": {
       "requires": [],
       "uses": [
