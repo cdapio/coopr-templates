@@ -22,22 +22,21 @@
       "install": {
         "type": "docker",
         "fields": {
-          "image_name": "elasticsearch",
-          "publish_ports": "9200,9300"
+          "image_name": "elasticsearch"
         }
       },
       "start": {
         "type": "docker",
         "fields": {
           "image_name": "elasticsearch",
-          "publish_ports": "9200,9300"
+          "publish_ports": "9200,9300",
+          "command": "elasticsearch -Des.network.host=0.0.0.0"
         }
       },
       "stop": {
         "type": "docker",
         "fields": {
-          "image_name": "elasticsearch",
-          "publish_ports": "9200,9300"
+          "image_name": "elasticsearch"
         }
       }
     }
