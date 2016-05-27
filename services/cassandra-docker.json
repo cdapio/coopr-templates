@@ -23,21 +23,21 @@
         "type": "docker",
         "fields": {
           "image_name": "cassandra",
-          "publish_ports": "7000"
+          "publish_ports": "7000,7001,7199,9042,9160"
         }
       },
       "start": {
         "type": "docker",
         "fields": {
           "image_name": "cassandra",
-          "publish_ports": "7000"
+          "publish_ports": "7000,7001,7199,9042,9160"
         }
       },
       "stop": {
         "type": "docker",
         "fields": {
           "image_name": "cassandra",
-          "publish_ports": "7000"
+          "publish_ports": "7000,7001,7199,9042,9160"
         }
       }
     }
