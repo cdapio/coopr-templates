@@ -30,6 +30,7 @@
         "fields": {
           "image_name": "elasticsearch",
           "publish_ports": "9200,9300",
+          "volumes": "/data/elasticsearch:/usr/share/elasticsearch/data",
           "command": "elasticsearch -Des.network.host=0.0.0.0"
         }
       },
