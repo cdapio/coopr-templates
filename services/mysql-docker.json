@@ -1,0 +1,45 @@
+{
+  "name": "mysql-docker",
+  "description": "MySQL running in a Docker container (mysql)",
+  "dependencies": {
+    "provides": [ "mysql", "database" ],
+    "conflicts": [],
+    "install": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    },
+    "runtime": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type": "docker",
+        "fields": {
+          "image_name": "mysql"
+        }
+      },
+      "start": {
+        "type": "docker",
+        "fields": {
+          "image_name": "mysql",
+          "publish_ports": "3306",
+          "environment_variables": "MYSQL_ROOT_PASSWORD=somedefaultpassword",
+          "volumes": "/data/mysql:/var/lib/mysql"
+        }
+      },
+      "stop": {
+        "type": "docker",
+        "fields": {
+          "image_name": "mysql"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "postgresql-docker",
+  "description": "PostgreSQL running in a Docker container (postgresql)",
+  "dependencies": {
+    "provides": [ "postgresql", "database" ],
+    "conflicts": [],
+    "install": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    },
+    "runtime": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type": "docker",
+        "fields": {
+          "image_name": "postgres"
+        }
+      },
+      "start": {
+        "type": "docker",
+        "fields": {
+          "image_name": "postgres",
+          "publish_ports": "5432",
+          "environment_variables": "POSTGRES_PASSWORD=somedefaultpassword",
+          "volumes": "/data/postgresql:/var/lib/postgresql/data"
+        }
+      },
+      "stop": {
+        "type": "docker",
+        "fields": {
+          "image_name": "postgres"
+        }
+      }
+    }
+  }
+}

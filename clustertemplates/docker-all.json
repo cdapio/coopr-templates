@@ -32,7 +32,9 @@
       "coopr-standalone",
       "docker",
       "elasticsearch-docker",
-      "mongodb-docker"
+      "mongodb-docker",
+      "mysql-docker",
+      "postgresql-docker"
     ]
   },
   "constraints": {
