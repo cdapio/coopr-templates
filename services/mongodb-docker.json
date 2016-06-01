@@ -22,22 +22,21 @@
       "install": {
         "type": "docker",
         "fields": {
-          "image_name": "mongo",
-          "publish_ports": "27017"
+          "image_name": "mongo"
         }
       },
       "start": {
         "type": "docker",
         "fields": {
           "image_name": "mongo",
-          "publish_ports": "27017"
+          "publish_ports": "27017",
+          "volumes": "/data/mongodb:/data/db"
         }
       },
       "stop": {
         "type": "docker",
         "fields": {
-          "image_name": "mongo",
-          "publish_ports": "27017"
+          "image_name": "mongo"
         }
       }
     }
