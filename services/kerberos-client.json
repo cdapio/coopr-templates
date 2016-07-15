@@ -18,7 +18,7 @@
       "install": {
         "type":"chef-solo",
         "fields": {
-          "run_list": "recipe[krb5::default]"
+          "run_list": "recipe[ntp::default],recipe[krb5::default]"
         }
       },
       "initialize": {
