@@ -13,9 +13,9 @@
     "config": {
       "ambari": {
         "server_fqdn": "%host.service.ambari-server%",
-        "version": "2.2.2",
-        "rhel_6_repo": "http://public-repo-1.hortonworks.com/ambari/centos6/2.x/updates/2.2.2.0/ambari.repo",
-        "ubuntu_12_repo": "http://public-repo-1.hortonworks.com/ambari/ubuntu12/2.x/updates/2.2.2.0"
+        "version": "2.4.0",
+        "rhel_6_repo": "http://public-repo-1.hortonworks.com/ambari/centos6/2.x/updates/2.4.0.1/ambari.repo",
+        "ubuntu_12_repo": "http://public-repo-1.hortonworks.com/ambari/ubuntu12/2.x/updates/2.4.0.1"
       }
     }
   },
