@@ -1,0 +1,43 @@
+{
+  "name": "solr-docker",
+  "description": "Solr running in a Docker container (solr)",
+  "dependencies": {
+    "provides": [ "solr" ],
+    "conflicts": [],
+    "install": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    },
+    "runtime": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type": "docker",
+        "fields": {
+          "image_name": "solr"
+        }
+      },
+      "start": {
+        "type": "docker",
+        "fields": {
+          "image_name": "solr",
+          "publish_ports": "8983"
+        }
+      },
+      "stop": {
+        "type": "docker",
+        "fields": {
+          "image_name": "solr"
+        }
+      }
+    }
+  }
+}

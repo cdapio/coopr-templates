@@ -34,7 +34,8 @@
       "elasticsearch-docker",
       "mongodb-docker",
       "mysql-docker",
-      "postgresql-docker"
+      "postgresql-docker",
+      "solr-docker"
     ]
   },
   "constraints": {
