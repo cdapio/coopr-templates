@@ -12,7 +12,10 @@
     ],
     "runtime": {
       "requires": [ "hadoop-hdfs-namenode", "hadoop-hdfs-datanode" ],
-      "uses": [ "kerberos-master" ]
+      "uses": [
+        "hadoop-kerberos",
+        "kerberos-master"
+      ]
     }
   },
   "provisioner": {

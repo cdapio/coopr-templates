@@ -12,7 +12,10 @@
     ],
     "runtime": {
       "requires": [],
-      "uses": [ "kerberos-master" ]
+      "uses": [
+        "hadoop-kerberos",
+        "kerberos-master"
+      ]
     }
   },
   "provisioner": {
