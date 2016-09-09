@@ -14,7 +14,10 @@
         "hadoop-hdfs-datanode",
         "impala-catalog"
       ],
-      "uses": [ "kerberos-master" ]
+      "uses": [
+        "hadoop-kerberos",
+        "kerberos-master"
+      ]
     }
   },
   "provisioner": {
