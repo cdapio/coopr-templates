@@ -10,7 +10,7 @@
     "provides": [],
     "runtime": {
       "requires": [],
-      "uses": []
+      "uses": [ "kerberos-master" ]
     }
   },
   "provisioner": {

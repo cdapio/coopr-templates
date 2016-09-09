@@ -10,7 +10,10 @@
     "provides": [],
     "runtime": {
       "requires": [],
-      "uses": [ "ambari-server" ]
+      "uses": [
+        "ambari-server",
+        "kerberos-master"
+       ]
     }
   },
   "provisioner": {
