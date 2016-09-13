@@ -16,7 +16,6 @@
         "zookeeper-server"
       ],
       "uses": [
-        "hadoop-kerberos",
         "kerberos-master",
         "impala-state-store"
       ]

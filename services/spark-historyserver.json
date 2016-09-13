@@ -13,7 +13,6 @@
     "runtime": {
       "requires": [],
       "uses": [
-        "hadoop-kerberos",
         "kerberos-master",
         "hadoop-hdfs-namenode",
         "hadoop-yarn-resourcemanager"

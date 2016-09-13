@@ -12,10 +12,7 @@
     ],
     "runtime": {
       "requires": [ "hadoop-yarn-resourcemanager" ],
-      "uses": [
-        "hadoop-kerberos",
-        "kerberos-master"
-      ]
+      "uses": [ "kerberos-master" ]
     }
   },
   "provisioner": {
