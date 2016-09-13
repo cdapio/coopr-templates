@@ -15,10 +15,7 @@
         "hbase-master",
         "zookeeper-server"
       ],
-      "uses": [
-        "hadoop-kerberos",
-        "kerberos-master"
-      ]
+      "uses": [ "kerberos-master" ]
     }
   },
   "provisioner": {

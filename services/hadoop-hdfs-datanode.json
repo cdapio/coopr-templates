@@ -14,7 +14,6 @@
       "requires": [ "hadoop-hdfs-namenode" ],
       "uses": [
         "hadoop-hdfs-secondarynamenode",
-        "hadoop-kerberos",
         "kerberos-master"
        ]
     }

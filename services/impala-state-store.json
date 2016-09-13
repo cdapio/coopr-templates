@@ -13,10 +13,7 @@
         "hadoop-hdfs-namenode",
         "hadoop-hdfs-datanode"
       ],
-      "uses": [
-        "hadoop-kerberos",
-        "kerberos-master"
-      ]
+      "uses": [ "kerberos-master" ]
     }
   },
   "provisioner": {

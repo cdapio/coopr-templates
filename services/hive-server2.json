@@ -17,10 +17,7 @@
         "zookeeper-server",
         "hive-metastore"
       ],
-      "uses": [
-        "hadoop-kerberos",
-        "kerberos-master"
-      ]
+      "uses": [ "kerberos-master" ]
     }
   },
   "provisioner": {
