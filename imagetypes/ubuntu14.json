@@ -18,7 +18,7 @@
       "image": "11836690"
     },
     "google": {
-      "image": "ubuntu-1404-trusty-v20160919",
+      "image": "ubuntu-1404-trusty-v20161020",
       "sshuser": "ubuntu"
     },
     "joyent": {
