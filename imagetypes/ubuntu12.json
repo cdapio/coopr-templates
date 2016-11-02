@@ -3,15 +3,15 @@
   "description": "Ubuntu 12.04 LTS (Precise Pangolin) 64-bit",
   "providermap": {
     "aws-us-east-1": {
-      "image": "ami-d6cf93be",
+      "image": "ami-a488dbb3",
       "sshuser": "ubuntu"
     },
     "aws-us-west-1": {
-      "image": "ami-b1a044f5",
+      "image": "ami-46125926",
       "sshuser": "ubuntu"
     },
     "aws-us-west-2": {
-      "image": "ami-75755545",
+      "image": "ami-41cd6921",
       "sshuser": "ubuntu"
     },
     "digitalocean": {

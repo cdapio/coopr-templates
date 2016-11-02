@@ -3,15 +3,15 @@
   "description": "Ubuntu 14.04 LTS (Trusty Tahr) 64-bit",
   "providermap": {
     "aws-us-east-1": {
-      "image": "ami-3e8ad556",
+      "image": "ami-a15e0db6",
       "sshuser": "ubuntu"
     },
     "aws-us-west-1": {
-      "image": "ami-17876353",
+      "image": "ami-6d064d0d",
       "sshuser": "ubuntu"
     },
     "aws-us-west-2": {
-      "image": "ami-ef3414df",
+      "image": "ami-38f25658",
       "sshuser": "ubuntu"
     },
     "digitalocean": {
