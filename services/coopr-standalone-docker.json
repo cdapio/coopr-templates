@@ -1,5 +1,5 @@
 {
-  "name": "coopr-standalone",
+  "name": "coopr-standalone-docker",
   "description": "Coopr Standalone running in a Docker container (caskdata/coopr-standalone)",
   "dependencies": {
     "provides": [],

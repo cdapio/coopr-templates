@@ -28,8 +28,8 @@
     "services": [
       "base",
       "cassandra-docker",
-      "cdap-standalone",
-      "coopr-standalone",
+      "cdap-standalone-docker",
+      "coopr-standalone-docker",
       "docker",
       "elasticsearch-docker",
       "mongodb-docker",
