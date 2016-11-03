@@ -1,5 +1,5 @@
 {
-  "name": "cdap-standalone",
+  "name": "cdap-standalone-docker",
   "description": "CDAP SDK (Standalone) running in a Docker container (caskdata/cdap-standalone)",
   "dependencies": {
     "provides": [],
