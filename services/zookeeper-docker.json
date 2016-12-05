@@ -1,0 +1,43 @@
+{
+  "name": "zookeeper-docker",
+  "description": "ZooKeeper running in a Docker container (zookeeper)",
+  "dependencies": {
+    "provides": [ "zookeeper" ],
+    "conflicts": [],
+    "install": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    },
+    "runtime": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type": "docker",
+        "fields": {
+          "image_name": "zookeeper"
+        }
+      },
+      "start": {
+        "type": "docker",
+        "fields": {
+          "image_name": "zookeeper",
+          "publish_ports": "2181,2888,3888"
+        }
+      },
+      "stop": {
+        "type": "docker",
+        "fields": {
+          "image_name": "zookeeper"
+        }
+      }
+    }
+  }
+}
