@@ -135,6 +135,7 @@
           "log.saver.run.memory.megs": "512",
           "master.service.memory.mb": "256",
           "master.service.num.cores": "1",
+          "messaging.container.memory.mb": "512",
           "metrics.memory.mb": "256",
           "metrics.num.cores": "2",
           "metrics.processor.memory.mb": "256",
