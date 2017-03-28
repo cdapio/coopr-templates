@@ -1,0 +1,42 @@
+{
+  "name": "etcd-docker",
+  "description": "Etcd running in a Docker container (etcd)",
+  "dependencies": {
+    "provides": [ "etcd" ],
+    "conflicts": [],
+    "install": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    },
+    "runtime": {
+      "requires": [],
+      "uses": [
+        "docker"
+      ]
+    }
+  },
+  "provisioner": {
+    "actions": {
+      "install": {
+        "type": "docker",
+        "fields": {
+          "image_name": "quay.io/coreos/etcd"
+        }
+      },
+      "start": {
+        "type": "docker",
+        "fields": {
+          "image_name": "quay.io/coreos/etcd"
+        }
+      },
+      "stop": {
+        "type": "docker",
+        "fields": {
+          "image_name": "quay.io/coreos/etcd"
+        }
+      }
+    }
+  }
+}
