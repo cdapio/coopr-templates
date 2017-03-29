@@ -21,12 +21,6 @@
           "run_list": "recipe[ntp::default],recipe[krb5::default]"
         }
       },
-      "initialize": {
-        "type":"chef-solo",
-        "fields": {
-          "run_list": "recipe[krb5_utils::default]"
-        }
-      },
       "configure": {
         "type":"chef-solo",
         "fields": {
