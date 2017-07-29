@@ -38,17 +38,18 @@
           "ssl"
         ]
       },
-      "mysql": {
-        "server_debian_password": "somedefaultpassword",
-        "server_root_password": "somedefaultpassword",
-        "server_repl_password": "somedefaultpassword",
-        "data_dir": "/data/mysql",
-        "server": {
-          "directories": {
-            "log_dir": "/data/mysql"
+      "coopr_mysql": {
+        "mysql_service": {
+          "lamp": {
+            "bind_address": "%ip.bind_v4.service.mysql-server%",
+            "data_dir": "/data/mysql",
+            "initial_root_password": "somedefaultpassword",
+            "port": "3306"
           }
-        },
-        "bind_address": "%ip.bind_v4.service.mysql-server%"
+        }
+      },
+      "mysql": {
+        "server_root_password": "somedefaultpassword"
       },
       "php": {
         "directives": {

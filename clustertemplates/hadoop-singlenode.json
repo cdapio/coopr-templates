@@ -94,17 +94,18 @@
           "hive.server2.thrift.port": "10010"
         }
       },
-      "mysql": {
-        "server_debian_password": "somedefaultpassword",
-        "server_root_password": "somedefaultpassword",
-        "server_repl_password": "somedefaultpassword",
-        "data_dir": "/data/mysql",
-        "server": {
-          "directories": {
-            "log_dir": "/data/mysql"
+      "coopr_mysql": {
+        "mysql_service": {
+          "hivedb": {
+            "bind_address": "127.0.0.1",
+            "data_dir": "/data/mysql",
+            "initial_root_password": "somedefaultpassword",
+            "port": "3306"
           }
-        },
-        "bind_address": "127.0.0.1"
+        }
+      },
+      "mysql": {
+        "server_root_password": "somedefaultpassword"
       },
       "zookeeper": {
         "zookeeper_env": {

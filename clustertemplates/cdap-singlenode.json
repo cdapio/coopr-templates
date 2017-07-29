@@ -108,24 +108,25 @@
           "hive.server2.thrift.port": "10010"
         }
       },
-      "mysql": {
-        "tunable": {
-          "max_connections": "50",
-          "key_buffer_size": "16M",
-          "tmp_table_size": "16M",
-          "max_heap_table_size": "16M",
-          "bulk_insert_buffer_size": "16M"
-        },
-        "server_debian_password": "somedefaultpassword",
-        "server_root_password": "somedefaultpassword",
-        "server_repl_password": "somedefaultpassword",
-        "data_dir": "/data/mysql",
-        "server": {
-          "directories": {
-            "log_dir": "/data/mysql"
+      "coopr_mysql": {
+        "mysql_service": {
+          "hivedb": {
+            "bind_address": "127.0.0.1",
+            "data_dir": "/data/mysql",
+            "initial_root_password": "somedefaultpassword",
+            "mysqld_options": {
+              "max_connections": "50",
+              "key_buffer_size": "16M",
+              "tmp_table_size": "16M",
+              "max_heap_table_size": "16M",
+              "bulk_insert_buffer_size": "16M"
+            },
+            "port": "3306"
           }
-        },
-        "bind_address": "127.0.0.1"
+        }
+      },
+      "mysql": {
+        "server_root_password": "somedefaultpassword"
       },
       "cdap": {
         "cdap_site": {
