@@ -99,7 +99,7 @@
       "coopr_mysql": {
         "mysql_service": {
           "hivedb": {
-            "bind_address": "%ip.bind_v4.service.mysql-server%",
+            "bind_address": "0.0.0.0",
             "data_dir": "/data/mysql",
             "initial_root_password": "somedefaultpassword",
             "port": "3306"
