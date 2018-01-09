@@ -2,7 +2,7 @@
   "name": "cdap",
   "description": "Cask DAP (CDAP)",
   "dependencies": {
-    "conflicts": ["cdap-standalone"],
+    "conflicts": ["cdap-sandbox-docker"],
     "install": {
       "requires": [
         "base",

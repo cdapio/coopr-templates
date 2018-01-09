@@ -1,10 +1,11 @@
 {
-  "name": "cdap-standalone-docker",
-  "description": "CDAP Standalone running in a Docker container (caskdata/cdap-standalone)",
+  "name": "cdap-sandbox-docker",
+  "description": "CDAP Sandbox running in a Docker container (caskdata/cdap-sandbox)",
   "dependencies": {
     "provides": [],
     "conflicts": [
-      "cdap"
+      "cdap",
+      "cdap-standalone-docker"
     ],
     "install": {
       "requires": [],
@@ -24,22 +25,22 @@
       "install": {
         "type": "docker",
         "fields": {
-          "image_name": "caskdata/cdap-standalone",
-          "publish_ports": "9999,10000"
+          "image_name": "caskdata/cdap-sandbox",
+          "publish_ports": "11011,11015"
         }
       },
       "start": {
         "type": "docker",
         "fields": {
-          "image_name": "caskdata/cdap-standalone",
-          "publish_ports": "9999,10000"
+          "image_name": "caskdata/cdap-sandbox",
+          "publish_ports": "11011,11015"
         }
       },
       "stop": {
         "type": "docker",
         "fields": {
-          "image_name": "caskdata/cdap-standalone",
-          "publish_ports": "9999,10000"
+          "image_name": "caskdata/cdap-sandbox",
+          "publish_ports": "11011,11015"
         }
       }
     }

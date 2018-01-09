@@ -28,7 +28,7 @@
     "services": [
       "base",
       "cassandra-docker",
-      "cdap-standalone-docker",
+      "cdap-sandbox-docker",
       "coopr-standalone-docker",
       "docker",
       "elasticsearch-docker",

@@ -1,9 +1,9 @@
 {
-  "name": "cdap-standalone-docker",
-  "description": "CDAP SDK (Standalone) in a Docker container",
+  "name": "cdap-sandbox-docker",
+  "description": "CDAP Sandbox in a Docker container",
   "defaults": {
     "services": [
-      "cdap-standalone"
+      "cdap-sandbox-docker"
     ],
     "provider": "rackspace",
     "hardwaretype": "standard-medium",
@@ -22,7 +22,7 @@
       "coreos-stable"
     ],
     "services": [
-      "cdap-standalone"
+      "cdap-sandbox-docker"
     ]
   },
   "constraints": {
@@ -46,7 +46,7 @@
   "links": [
     {
       "label": "CDAP UI",
-      "url": "http://%ip.access_v4.service.cdap-standalone%:9999"
+      "url": "http://%ip.access_v4.service.cdap-sandbox-docker%:11011"
     }
   ]
 }
