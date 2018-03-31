@@ -18,13 +18,13 @@
     "actions": {
       "install": {
         "fields": {
-          "run_list": "recipe[docker]"
+          "run_list": "recipe[coopr_docker]"
         },
         "type": "chef-solo"
       },
       "configure": {
         "fields": {
-          "run_list": "recipe[docker]"
+          "run_list": "recipe[coopr_docker]"
         },
         "type": "chef-solo"
       }
