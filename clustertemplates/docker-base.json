@@ -15,8 +15,9 @@
       "standard-2xlarge"
     ],
     "imagetypes": [
-      "centos6",
-      "ubuntu12"
+      "centos7",
+      "ubuntu14",
+      "ubuntu16"
     ],
     "services": [
       "base",
