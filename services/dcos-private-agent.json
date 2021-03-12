@@ -1,6 +1,6 @@
 {
-  "name": "dcos-slave",
-  "description": "DC/OS Slave service",
+  "name": "dcos-private-agent",
+  "description": "DC/OS Private Agent",
   "dependencies": {
     "conflicts": [],
     "install": {

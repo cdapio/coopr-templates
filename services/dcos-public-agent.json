@@ -1,6 +1,6 @@
 {
-  "name": "dcos-slave-public",
-  "description": "DC/OS Public Slave service",
+  "name": "dcos-public-agent",
+  "description": "DC/OS Public Agent service",
   "dependencies": {
     "conflicts": [],
     "install": {

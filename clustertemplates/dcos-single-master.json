@@ -4,7 +4,7 @@
   "defaults": {
     "services": [
       "dcos-master",
-      "dcos-slave"
+      "dcos-private-agent"
     ],
     "provider": "google",
     "hardwaretype": "standard-xlarge",
@@ -30,8 +30,8 @@
     ],
     "services": [
       "dcos-master",
-      "dcos-slave",
-      "dcos-slave-public"
+      "dcos-private-agent",
+      "dcos-public-agent"
     ]
   },
   "administration": {
@@ -50,8 +50,8 @@
       "cantcoexist": [
         [
           "dcos-master",
-          "dcos-slave",
-          "dcos-slave-public"
+          "dcos-private-agent",
+          "dcos-public-agent"
         ]
       ]
     },
@@ -62,12 +62,12 @@
           "max": 1
         }
       },
-      "dcos-slave": {
+      "dcos-private-agent": {
         "quantities": {
           "min": 1
         }
       },
-      "dcos-slave-public": {
+      "dcos-public-agent": {
         "quantities": {
           "min": 0,
           "max": 1
